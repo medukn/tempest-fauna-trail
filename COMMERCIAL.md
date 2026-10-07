@@ -22,7 +22,7 @@ per-title fees, or a share of revenue/profit — depending on the use.
 
 - **Merlin Duty-Knez (Meduty)** — <merlin@duty-knez.at>
 - **Adam Ebner (AdamZ0904)**
-- Project: <https://github.com/Meduty/tempest-fauna-trail>
+- Project: <https://github.com/medukn/tempest-fauna-trail>
 
 Open a GitHub issue titled `commercial-license` or email the address above with
 a short description of your intended use, and the authors will follow up.

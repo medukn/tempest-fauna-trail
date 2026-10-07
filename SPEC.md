@@ -535,7 +535,7 @@ Route (staged nodes) → Node[weather] → Combat(team, enemies, weather) → Ba
   `tests/game/test_traits.py::test_trait_rungs_are_cumulative_for_mechanics`.
   Touches `game/traits/{kinships,callings,mechanics}.py`.
 - B.17 [2026-06-13] Boss map-effect (environmental) damage crashed `deal_damage`
-  ([#40](https://github.com/Meduty/tempest-fauna-trail/issues/40)). **Cause:**
+  ([#40](https://github.com/medukn/tempest-fauna-trail/issues/40)). **Cause:**
   hazard tiles / map effects deal attacker-less damage (`map_effects.py:258`
   `deal_damage(None, piece, …)`), but `context.deal_damage` dereferenced
   `attacker.affinity` (`:221`) and `attacker.ability_can_crit` (`:229`), and the
@@ -572,7 +572,7 @@ Route (staged nodes) → Node[weather] → Combat(team, enemies, weather) → Ba
   `game/loadout.py`, `game/combat/engine.py`, `game/traits/_packs.py`,
   `game/traits/mechanics.py`.
 - B.19 [2026-06-14] Tier-B inline scalers invisible + free-prose drift
-  ([#42](https://github.com/Meduty/tempest-fauna-trail/issues/42) Finding A). **Cause:**
+  ([#42](https://github.com/medukn/tempest-fauna-trail/issues/42) Finding A). **Cause:**
   T.34 hoisted only **headline** damage/heal numbers into `ScalingTerm`s; every other
   stat-scaled outlet (armor/res buffs `enemies.py:1249-1250`, barriers, `max(STR,INT)`
   `enemies.py:966,2124`, %-of-max-HP heals, summon fractions) stayed **free inline math**
@@ -583,7 +583,7 @@ Route (staged nodes) → Node[weather] → Combat(team, enemies, weather) → Ba
   fails the build on any uncovered stat-read. Byte-identical (V.2/V.14). Touches
   `game/registries.py`, `game/ability_text.py`, `game/abilities/{champions,enemies,bosses}.py`.
 - B.20 [2026-06-14] Primary-stat tanks rival assassins; dead INT
-  ([#42](https://github.com/Meduty/tempest-fauna-trail/issues/42) Finding B). **Cause:**
+  ([#42](https://github.com/medukn/tempest-fauna-trail/issues/42) Finding B). **Cause:**
   durability's STR/INT penalty was sized without accounting for the `stat`-axis bonus —
   `_PRIMARY_STAT["str"]=1.8 × _DURABILITY["tanky_hp"]["strength"]=0.55 ≈ 0.99 ≈` a bruiser's
   `1.0` (`content.py:34,77`), so a `stat="str"` tank kept ~full primary scaling (Coral Colossus

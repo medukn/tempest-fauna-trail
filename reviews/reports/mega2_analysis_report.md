@@ -1,6 +1,6 @@
 # Mega2 Simulation Analysis Report
 
-*Deep analysis of the `results/mega2/` sweep. Backing document for [issue #28](https://github.com/Meduty/tempest-fauna-trail/issues/28).*
+*Deep analysis of the `results/mega2/` sweep. Backing document for [issue #28](https://github.com/medukn/tempest-fauna-trail/issues/28).*
 
 Generated 2026-05-30 from `results/mega2/` (1v1 full round-robin ×6 weathers, 2v2 sampled ×6 weathers, 3v3 sampled on clear).
 
@@ -273,7 +273,7 @@ The original analysis included Bradley-Terry β values which spanned 176× acros
 
 1. **Soften the win-curve with controlled variance** (crit, damage roll, stronger affinity triangle). Decide the intended `WR vs power-ratio` shape on purpose, then tune to it. Highest leverage — fixes fight feel *and* makes every difficulty/balance knob behave (Sections 2.1, 2.4, 5).
 2. **Make the power budget distribution-aware** — add a concentration term to `ΣP`, or have encounter generation spread tiers; surface "don't over-level one carry" to players (Section 2.2).
-3. **Replace budget-multiplier difficulty knobs** (incl. DC's `ΣP × 1.1`) with flat stat scaling + authored milestone changes — the cliff makes multipliers non-linear (Section 2.1, [issue #28](https://github.com/Meduty/tempest-fauna-trail/issues/28)).
+3. **Replace budget-multiplier difficulty knobs** (incl. DC's `ΣP × 1.1`) with flat stat scaling + authored milestone changes — the cliff makes multipliers non-linear (Section 2.1, [issue #28](https://github.com/medukn/tempest-fauna-trail/issues/28)).
 4. **Re-run with `--tier-stratified`** to recover true within-tier kit quality (Sections 2.3, 4).
 5. **Fix the broken bin, not the gradient.** Powder Sapper (auto-lose), low-tier marksman/warrior floor, warrior closing power, Avalanche Engine kit. Leave the *interesting* gradient (strong legendaries, Hunter calling, high-tier prizes) — gate it, don't flatten it.
 6. **Look at the Hunter calling** specifically (the one trait that overperforms tier-controlled), and the mono-affinity synergy hint.

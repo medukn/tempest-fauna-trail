@@ -3,8 +3,8 @@
 > **Resolved.** This note is kept for context. The engine split described
 > below was closed by T.26 (commit `b229f93`, PR [#18][pr18], issue [#17][i17]).
 
-[pr18]: https://github.com/Meduty/tempest-fauna-trail/pull/18
-[i17]: https://github.com/Meduty/tempest-fauna-trail/issues/17
+[pr18]: https://github.com/medukn/tempest-fauna-trail/pull/18
+[i17]: https://github.com/medukn/tempest-fauna-trail/issues/17
 
 ## What used to be split
 
