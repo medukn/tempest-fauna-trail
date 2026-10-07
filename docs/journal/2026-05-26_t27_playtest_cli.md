@@ -53,7 +53,7 @@ The original plan called for a `--engine` toggle and a custom
 they would have been pure cargo-cult. The `engine_split.md` note was
 demoted from "current state" to "historical context, resolved by T.26".
 
-[pr18]: https://github.com/Meduty/tempest-fauna-trail/pull/18
+[pr18]: https://github.com/medukn/tempest-fauna-trail/pull/18
 
 ### Boss fights still need bespoke wiring
 
